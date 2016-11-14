@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NPC Generator</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Nombre</string>
+    <string name="caracteristica">Característica</string>
+    <string name="ideal">Ideal</string>
+    <string name="defecto">Defecto</string>
+    <string name="lazo">Lazo</string>
+    <string name="generarPersonaje">¡Generar Personaje!</string>
+</resources>
