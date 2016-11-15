@@ -12,10 +12,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import personajes.Personaje;
-import personajes.elfos.ElfoFemenino;
-import personajes.elfos.ElfoMasculino;
-import personajes.enanos.EnanoFemenino;
-import personajes.enanos.EnanoMasculino;
 import personajes.generico.PersonajeGenerico;
 
 public class MainActivity extends AppCompatActivity {
@@ -100,16 +96,51 @@ public class MainActivity extends AppCompatActivity {
         switch (spRazaPersonaje.getSelectedItem().toString()){
             case "Elfos":
                 if (sexo.equals("Masculino")){
-                    personaje = new ElfoMasculino();
+                    personaje = new personajes.elfos.Masculino();
                 } else {
-                    personaje = new ElfoFemenino();
+                    personaje = new personajes.elfos.Femenino();
+                }
+                break;
+            case "Dracónicos":
+                if (sexo.equals("Masculino")){
+                    personaje = new personajes.draconicos.Masculino();
+                } else {
+                    personaje = new personajes.draconicos.Femenino();
                 }
                 break;
             case "Enanos":
                 if (sexo.equals("Masculino")){
-                    personaje = new EnanoMasculino();
+                    personaje = new personajes.enanos.Masculino();
                 } else {
-                    personaje = new EnanoFemenino();
+                    personaje = new personajes.enanos.Femenino();
+                }
+                break;
+            case "Gnomos":
+                if (sexo.equals("Masculino")){
+                    personaje = new personajes.gnomos.Masculino();
+                } else {
+                    personaje = new personajes.gnomos.Femenino();
+                }
+                break;
+            case "Medianos":
+                if (sexo.equals("Masculino")){
+                    personaje = new personajes.medianos.Masculino();
+                } else {
+                    personaje = new personajes.medianos.Femenino();
+                }
+                break;
+            case "Semiorcos":
+                if (sexo.equals("Masculino")){
+                    personaje = new personajes.semiorcos.Masculino();
+                } else {
+                    personaje = new personajes.semiorcos.Femenino();
+                }
+                break;
+            case "Tieflings":
+                if (sexo.equals("Masculino")){
+                    personaje = new personajes.tieflings.Masculino();
+                } else {
+                    personaje = new personajes.tieflings.Femenino();
                 }
                 break;
             default:

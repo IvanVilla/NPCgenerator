@@ -1,4 +1,4 @@
-package personajes.elfos;
+package personajes.medianos;
 
 import personajes.Personaje;
 
@@ -6,11 +6,11 @@ import personajes.Personaje;
  * Created by Klaussius on 15/11/2016.
  */
 
-public class ElfoMasculino extends Personaje {
+public class Masculino extends Personaje {
     /**
      * Constructor
      */
-    public ElfoMasculino() {
+    public Masculino() {
         super.nombre=new NombreMasculino().getNombre()+" "+new Apellido().getApellido();
     }
 }

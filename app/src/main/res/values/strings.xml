@@ -18,7 +18,7 @@
         <item>Humanos</item>
         <item>Medianos</item>
         <item>Semiorcos</item>
-        <item>Tiefling</item>
+        <item>Tieflings</item>
     </string-array>
     <string-array name="selectorSexo">
         <item>Masculino</item>
