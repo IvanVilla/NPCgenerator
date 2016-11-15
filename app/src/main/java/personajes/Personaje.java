@@ -1,4 +1,4 @@
-package personajes.enanos;
+package personajes;
 
 import detalles.Caracteristicas;
 import detalles.Defectos;
@@ -6,7 +6,6 @@ import detalles.Ideales;
 import detalles.Lazos;
 
 /**
- * Crea un personaje enano
  * Created by Klaussius on 15/11/2016.
  */
 

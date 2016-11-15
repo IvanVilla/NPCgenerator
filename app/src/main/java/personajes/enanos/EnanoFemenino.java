@@ -5,12 +5,12 @@ package personajes.enanos;
  * Created by Klaussius on 15/11/2016.
  */
 
-public class PersonajeFemenino extends Personaje {
+public class EnanoFemenino extends personajes.Personaje {
 
     /**
      * Constructor
      */
-    public PersonajeFemenino() {
+    public EnanoFemenino() {
         super.nombre=new NombreFemenino().getNombre()+" "+new Apellido().getApellido();
     }
 }

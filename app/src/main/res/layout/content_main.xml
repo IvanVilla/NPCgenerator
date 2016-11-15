@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tvNombreInfo"
+            android:id="@+id/textView"
             android:text="@string/nombre" />
 
         <TextView
@@ -89,6 +89,19 @@
             android:id="@+id/tvLazo"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTipoPersonajeInfo"
+            android:text="@string/tipoPj"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spTipoPersonaje"
+            android:layout_marginTop="15dp" />
 
         <Button
             android:text="@string/generarPersonaje"

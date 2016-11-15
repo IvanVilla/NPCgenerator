@@ -6,5 +6,11 @@
     <string name="ideal">Ideal</string>
     <string name="defecto">Defecto</string>
     <string name="lazo">Lazo</string>
+    <string name="tipoPj">Tipo de Personaje</string>
     <string name="generarPersonaje">¡Generar Personaje!</string>
+    <string-array name="selectorRaza">
+        <item>Genérico</item>
+        <item>Enano masculino</item>
+        <item>Enano femenino</item>
+    </string-array>
 </resources>
