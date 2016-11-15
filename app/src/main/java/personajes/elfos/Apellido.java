@@ -1,49 +1,37 @@
-package personajes.enanos;
+package personajes.elfos;
 
 import utilidades.Dado;
 import utilidades.HerramientasTexto;
 
 /**
- * Genera apellidos personajes.enanos
  * Created by Klaussius on 15/11/2016.
  */
 
 class Apellido {
     //Comienzo apellidos
     private String comienzos[]={
-            "bal",
-            "battle",
-            "braw",
-            "dan",
-            "fire",
-            "frost",
-            "go",
-            "holder",
-            "iron",
-            "lo",
-            "lut",
-            "rumna",
-            "stra",
-            "to",
-            "un"
+            "ama",
+            "amas",
+            "gala",
+            "holi",
+            "ilphel",
+            "lia",
+            "meli",
+            "naï",
+            "sian",
+            "silos"
     };
 
     //Finales apellidos
     private String finales[]={
-            "beard",
-            "derk",
-            "derr",
-            "fist",
-            "forge",
-            "gart",
-            "gehr",
-            "hammer",
-            "heim",
-            "hek",
-            "keln",
-            "kil",
-            "nanvil",
-            "runn"
+            "amne",
+            "cient",
+            "don",
+            "kiir",
+            "lo",
+            "mion",
+            "nodel",
+            "tacia"
     };
 
     //Nombre

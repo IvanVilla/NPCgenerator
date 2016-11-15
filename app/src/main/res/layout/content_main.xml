@@ -25,7 +25,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
-            android:text="@string/nombre" />
+            android:text="@string/nombre"
+            android:layout_marginTop="10dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -93,15 +94,28 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/tvTipoPersonajeInfo"
-            android:text="@string/tipoPj"
+            android:id="@+id/tvRazaPersonajeInfo"
+            android:text="@string/razaPj"
             android:layout_marginTop="10dp" />
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spTipoPersonaje"
-            android:layout_marginTop="15dp" />
+            android:id="@+id/spRazaPersonaje"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSexoPersonajeInfo"
+            android:text="@string/sexoPj"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spSexoPersonaje"
+            android:layout_marginTop="5dp" />
 
         <Button
             android:text="@string/generarPersonaje"

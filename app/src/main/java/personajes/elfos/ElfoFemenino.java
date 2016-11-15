@@ -1,16 +1,15 @@
-package personajes.enanos;
+package personajes.elfos;
 
 /**
- * Enanos femeninos, hereda de personaje
+ * Elfos femeninos, hereda de personaje
  * Created by Klaussius on 15/11/2016.
  */
 
-public class EnanoFemenino extends personajes.Personaje {
-
+public class ElfoFemenino extends personajes.Personaje{
     /**
      * Constructor
      */
-    public EnanoFemenino() {
+    public ElfoFemenino() {
         super.nombre=new NombreFemenino().getNombre()+" "+new Apellido().getApellido();
     }
 }

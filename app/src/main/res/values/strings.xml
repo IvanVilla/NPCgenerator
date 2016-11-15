@@ -6,11 +6,23 @@
     <string name="ideal">Ideal</string>
     <string name="defecto">Defecto</string>
     <string name="lazo">Lazo</string>
-    <string name="tipoPj">Tipo de Personaje</string>
+    <string name="razaPj">Raza</string>
+    <string name="sexoPj">Sexo</string>
     <string name="generarPersonaje">¡Generar Personaje!</string>
     <string-array name="selectorRaza">
         <item>Genérico</item>
-        <item>Enano masculino</item>
-        <item>Enano femenino</item>
+        <item>Dracónicos</item>
+        <item>Elfos</item>
+        <item>Enanos</item>
+        <item>Gnomos</item>
+        <item>Humanos</item>
+        <item>Medianos</item>
+        <item>Semiorcos</item>
+        <item>Tiefling</item>
     </string-array>
+    <string-array name="selectorSexo">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
 </resources>

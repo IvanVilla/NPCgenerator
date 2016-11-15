@@ -12,6 +12,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import personajes.Personaje;
+import personajes.elfos.ElfoFemenino;
+import personajes.elfos.ElfoMasculino;
 import personajes.enanos.EnanoFemenino;
 import personajes.enanos.EnanoMasculino;
 import personajes.generico.PersonajeGenerico;
@@ -26,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     TextView tvLazo;
 
     // Spinners
-    Spinner spTipoPersonaje;
+    Spinner spRazaPersonaje;
+    Spinner spSexoPersonaje;
 
     // Buttons
     Button btGenerarPersonaje;
@@ -45,21 +48,26 @@ public class MainActivity extends AppCompatActivity {
         tvDefecto = (TextView)findViewById(R.id.tvDefecto);
         tvLazo = (TextView)findViewById(R.id.tvLazo);
 
-        // Inicializo el spinner y su adaptador
-        spTipoPersonaje = (Spinner)findViewById(R.id.spTipoPersonaje);
-        ArrayAdapter<CharSequence> adapter =
+        // Inicializo el spinner de razas y su adaptador
+        spRazaPersonaje = (Spinner)findViewById(R.id.spRazaPersonaje);
+        ArrayAdapter<CharSequence> adaptadorRaza =
                 ArrayAdapter.createFromResource(this,R.array.selectorRaza,android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spTipoPersonaje.setAdapter(adapter);
+        adaptadorRaza.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spRazaPersonaje.setAdapter(adaptadorRaza);
 
-
+        // Inicializo el spinner de sexo y su adaptador
+        spSexoPersonaje = (Spinner)findViewById(R.id.spSexoPersonaje);
+        ArrayAdapter<CharSequence> adaptadorSexo =
+                ArrayAdapter.createFromResource(this,R.array.selectorSexo,android.R.layout.simple_spinner_item);
+        adaptadorSexo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spSexoPersonaje.setAdapter(adaptadorSexo);
 
         // Botón de generar personaje
         btGenerarPersonaje = (Button)findViewById(R.id.btGenerarPersonaje);
         btGenerarPersonaje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String pj = spTipoPersonaje.getSelectedItem().toString();
+                String pj = spRazaPersonaje.getSelectedItem().toString();
                 generarPersonaje();
             }
         });
@@ -88,12 +96,21 @@ public class MainActivity extends AppCompatActivity {
      */
     public void generarPersonaje(){
         Personaje personaje;
-        switch (spTipoPersonaje.getSelectedItem().toString()){
-            case "Enano masculino":
-                personaje = new EnanoMasculino();
+        String sexo = spSexoPersonaje.getSelectedItem().toString();
+        switch (spRazaPersonaje.getSelectedItem().toString()){
+            case "Elfos":
+                if (sexo.equals("Masculino")){
+                    personaje = new ElfoMasculino();
+                } else {
+                    personaje = new ElfoFemenino();
+                }
                 break;
-            case "Enano femenino":
-                personaje = new EnanoFemenino();
+            case "Enanos":
+                if (sexo.equals("Masculino")){
+                    personaje = new EnanoMasculino();
+                } else {
+                    personaje = new EnanoFemenino();
+                }
                 break;
             default:
                 personaje = new PersonajeGenerico();

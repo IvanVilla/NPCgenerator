@@ -1,7 +1,7 @@
 package personajes.enanos;
 
 /**
- * Enanos masculinos, hereda de personaje enano
+ * Enanos masculinos, hereda de personaje
  * Created by Klaussius on 15/11/2016.
  */
 public class EnanoMasculino extends personajes.Personaje {
