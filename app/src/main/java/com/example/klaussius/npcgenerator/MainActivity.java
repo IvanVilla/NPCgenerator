@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import ficha.Personaje;
+import personajes.generico.PersonajeGenerico;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -68,11 +68,11 @@ public class MainActivity extends AppCompatActivity {
      * Genera un personaje, llena los textView...
      */
     public void generarPersonaje(){
-        Personaje personaje = new Personaje();
-        tvNombre.setText(personaje.getNombre());
-        tvCaracteristica.setText(personaje.getCaracteristica());
-        tvIdeal.setText(personaje.getIdeal());
-        tvDefecto.setText(personaje.getDefecto());
-        tvLazo.setText(personaje.getLazo());
+        PersonajeGenerico personajeGenerico = new PersonajeGenerico();
+        tvNombre.setText(personajeGenerico.getNombre());
+        tvCaracteristica.setText(personajeGenerico.getCaracteristica());
+        tvIdeal.setText(personajeGenerico.getIdeal());
+        tvDefecto.setText(personajeGenerico.getDefecto());
+        tvLazo.setText(personajeGenerico.getLazo());
     }
 }

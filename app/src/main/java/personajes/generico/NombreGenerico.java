@@ -1,4 +1,4 @@
-package ficha;
+package personajes.generico;
 
 import utilidades.HerramientasTexto;
 import utilidades.Dado;
@@ -7,7 +7,7 @@ import utilidades.Dado;
  * Genera un nombre para el personaje
  * Created by Klaussius on 14/11/2016.
  */
-public class GeneradorNombre {
+public class NombreGenerico {
 
     // Sílabas iniciales
     private String comienzos[]={
@@ -87,7 +87,7 @@ public class GeneradorNombre {
     /**
      * Constructor
      */
-    public GeneradorNombre(){
+    public NombreGenerico(){
         Dado dado = new Dado();
         // Creo el nombre
         nombre = comienzos[dado.tirada(comienzos.length)]+medios[dado.tirada(medios.length)]+finales[dado.tirada(finales.length)];

@@ -97,6 +97,7 @@
             android:id="@+id/btGenerarPersonaje"
             android:backgroundTint="@android:color/holo_green_light"
             android:layout_marginTop="15dp" />
+
     </LinearLayout>
 
 </RelativeLayout>

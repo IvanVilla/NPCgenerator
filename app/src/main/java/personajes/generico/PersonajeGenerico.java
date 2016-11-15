@@ -1,11 +1,16 @@
-package ficha;
+package personajes.generico;
+
+import detalles.Caracteristicas;
+import detalles.Defectos;
+import detalles.Ideales;
+import detalles.Lazos;
 
 /**
  * Almacena un personaje
  * Created by Klaussius on 14/11/2016.
  */
 
-public class Personaje {
+public class PersonajeGenerico {
     // Datos
     private String nombre;
     private String caracteristica;
@@ -16,8 +21,8 @@ public class Personaje {
     /**
      * Constructor
      */
-    public Personaje(){
-        nombre = new GeneradorNombre().getNombre();
+    public PersonajeGenerico(){
+        nombre = new NombreGenerico().getNombre();
         caracteristica=new Caracteristicas().getCaracteristica();
         ideal = new Ideales().getIdeal();
         defecto = new Defectos().getDefecto();
